@@ -14,12 +14,36 @@
     <div class="container">
         <div class="jumbotron">New York Times Search</div>
         <div class="row">
-            <div class="card body">
-                <div class="col-12">Search Parameters</div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">Search Parameters</div>
+                </div>
+                <!-- <div class="row"></div> -->
+                <div class="form-group">
+                    <label for="search-term">Search Term</label>
+                    <textarea class="form-control" id="search-term" rows="1"></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="my-1 mr-2" for="number-articles">Number of Records to Retrieve:</label>
+                    <select class="custom-select my-1 mr-sm-2" id="number-articles">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="start-year">Start Year (Optional):</label>
+                    <textarea class="form-control" id="start-year" rows="1"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="end-year">End Year (Optional):</label>
+                    <textarea class="form-control" id = "end-year" rows="1"></textarea>
+                </div>
+                <button id="search">Search</button>
+                <button id="clear">Clear Results</button>
             </div>
-        </div>
-        <div class="row">
-            <input type="text">
         </div>
     </div>
 
