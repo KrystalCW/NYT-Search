@@ -28,7 +28,14 @@ $(document).ready(function () {
             let article = `<div><a href="${url}"><h3>${headline}</h3></a><p>${summary}</p></div>`
             $('#article-display').append(article);
             }
+            $('#search-term').val('')
+            $('#number-articles').val('1')
+            $('#start-year').val('')
+            $('#end-year').val('')
+        })
 
+        $('#clear').on('click', function() {
+            $('#article-display').empty();
         })
     })
 })
